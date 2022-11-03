@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User profile </title>
+</head>
+<body>
+    <h1> username  value </h1>
+        <h3 style="color:darkred;"> Hello {{username}} </h3>
+ <h1> List  value </h1>
+        <h3 style="color:darkred;">  {{courses}} </h3>
+        <ol>
+        {% for item in  courses %}
+            <li> {{item}}</li>
+        {% endfor %}
+        </ol>
+
+ <h1> Info  value </h1>
+        <h3 style="color:darkred;">  {{info}} </h3>
+        {{info['name']}}  {{info['courses'][1]}}
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+        {{super()}}
+    <h1> Hello from profile  this the profile page </h1>
+    <a href="{{url_for('test')}}"> test</a>
+    <a href="{{url_for('homeuser', user='Ayaaa <3', track='python')}}"
+       class="btn btn-success"> Query string </a>
+
+{% endblock  %}

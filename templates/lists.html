@@ -1,0 +1,39 @@
+{% extends  'base.html' %}
+
+{% block content %}
+<!--    <ol>-->
+<!--    {%for item in courses %}-->
+<!--            <li> {{item}}</li>-->
+<!--    {% endfor %}-->
+<!--    </ol>-->
+
+<!--<h1> Names</h1>-->
+
+<!--<ol>-->
+<!--    {%for item in names %}-->
+<!--            <li> {{item}}</li>-->
+<!--    {% endfor %}-->
+<!--    </ol>-->
+    {% macro render_list(mylist) %}
+            <ol>
+                {% for l in mylist %}
+                      <li> {{l}} </li>
+                {% endfor %}
+            </ol>
+    {% endmacro%}
+
+    <h1> Courses </h1>
+    {{ render_list(courses)}}
+
+<h1> Names </h1>
+{{ render_list(names)}}
+
+    <h1> Extend external macro </h1>
+       {% import 'macros.html' as macros%}
+
+        {{macros.render_list_util(courses)}}
+
+
+
+
+{% endblock%}

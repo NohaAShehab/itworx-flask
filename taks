@@ -1,0 +1,12 @@
+
+
+create flask appliction for amazon
+
+    view all products, specific product
+
+        product (id , name, description , image, price )
+
+        2 pages  ---> list all products
+        when you click show ---> get the details of the product
+
+        search ---> created_at field in flask model .
