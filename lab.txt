@@ -1,0 +1,16 @@
+
+
+
+lab:
+    modify the library project you made last lab to work using the
+    MVC Architecuture and use postgres ...
+
+    ---> install migration package for flask
+    ---> create model called author
+    --> modify the books model to include author information
+
+Docs:
+    models: https://flask-sqlalchemy.palletsprojects.com/en/2.x/models/
+    migrate: https://flask-migrate.readthedocs.io/en/latest/
+
+
