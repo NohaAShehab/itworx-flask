@@ -1,0 +1,6 @@
+
+
+complete crud (add, edit , view , delete)operations using wtf-flask ---> for book
+
+
+create endpoint for the crud operations on the book or author .

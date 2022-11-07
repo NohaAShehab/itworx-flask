@@ -21,4 +21,4 @@ class EmployeeModel(db.Model):
     email = db.Column(db.String(100), unique=True, nullable=True)
     age =db.Column(db.Integer, default=25)
     dept_id= db.Column(db.Integer, db.ForeignKey('departments.id'),
-        nullable=False)
+        nullable=True)

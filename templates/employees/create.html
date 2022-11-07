@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<h1>--------------- </h1>
+    <form method="post"  >
+        <legend> Add Employee</legend>
+        {{ form.csrf_token }}
+        <div class="mb-3">
+            {{ form.name.label }} {{ form.name(size=20, value=name)  }}
+        </div>
+         <div class="mb-3">
+        {{ form.salary.label }} {{ form.salary }}
+        </div>
+        <div class="mb-3">
+        {{ form.email.label }} {{ form.email(size=40) }}
+            {{errors}}
+        </div>
+        <div class="mb-3">
+        {{ form.age.label }} {{ form.age}}
+        </div>
+        <input type="submit" class="btn btn-success" value="Add new Employee">
+    </form>
+
+{% endblock %}
